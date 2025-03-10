@@ -12,7 +12,7 @@ const uri = "mongodb://localhost:27017/zgasdb";
 mongoose.connect(uri);
 
 
-//°|°|°|°|°|°|°|°|COMPROBAR QUE TODO FUNCIONES|°|°|°|°|°|°|°|°|°|//
+//°|°|°|°|°|°|°|°|COMPROBAR QUE TODO FUNCIONE|°|°|°|°|°|°|°|°|°|//
 
 //3.Creo una constante que es igual a la conexión
 const connection = mongoose.connection;
