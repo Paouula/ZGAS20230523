@@ -1,18 +1,19 @@
-/*
-Campos: 
-  name
+/*name
   lastName
-  birthday
+  birthday (esto es de tipo Date o lo puden poner como String)
   email
+  address
+  hireDate (esto es de tipo Date o lo puden poner como String)
   password
   telephone
   dui
-  isVerified
+  isssNumber
+  isVerified (esto es booleano)
 */
 
 import { Schema, model } from "mongoose";
 
-const clientsSchema = Schema({
+const employeesSchema = Schema({
     name: {
         type: String,
         require: true
@@ -27,6 +28,14 @@ const clientsSchema = Schema({
     },
     email:{
         type: String,
+        require: true
+    },
+    address:{
+        type: String,
+        requiere: true
+    },
+    hireDate: {
+        type: Date,
         require: true
     },
     password:{
@@ -46,6 +55,11 @@ const clientsSchema = Schema({
         requiere: true,
         minLength: 10,
     },
+    isssNumber:{
+        type: String,
+        requiere: true,
+        maxLength: 9
+    },
     isVerifid:{
         type: Boolean,
         require: true
@@ -55,4 +69,4 @@ const clientsSchema = Schema({
     strict: false
 })
 
-export default model("Clients", clientsSchema);
+export default model("Employeses", employeesSchema);
