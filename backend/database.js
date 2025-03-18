@@ -9,7 +9,7 @@ import { config } from "./src/config.js";
 const uri = "mongodb://localhost:27017/zgasdb";
 
 //2.Conectar la base de datos 
-mongoose.connect(uri);
+mongoose.connect(config.db.URI);
 
 
 //°|°|°|°|°|°|°|°|COMPROBAR QUE TODO FUNCIONE|°|°|°|°|°|°|°|°|°|//
