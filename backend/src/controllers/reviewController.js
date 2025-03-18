@@ -1,6 +1,6 @@
 const reviewController = {};
 import Review from "../models/Review.js";
-import reviweModel from  "../models/Review.js"
+import reviweModel from  "../models/Review.js";
 
 //SELECT 
 reviewController.getReview = async (req, res) => {

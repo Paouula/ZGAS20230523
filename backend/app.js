@@ -5,6 +5,7 @@ import ClientsRoutes from "./src/routes/clients.js";
 import BranchesRoutes from "./src/routes/branches.js";
 import EmployeesRoutes from "./src/routes/employees.js"
 import ReviewRoutes from "./src/routes/review.js";
+import EvaluationsRoutes from "./src/routes/evaluations.js"
 
 
 //Cree una constante que es igual a la libreria
@@ -24,6 +25,9 @@ app.use("api/branches", BranchesRoutes);
 app.use("/api/review", ReviewRoutes);
 
 app.use("api/employees", EmployeesRoutes);
+
+app.use("api/evaluations", EvaluationsRoutes);
+
 export default app;
 
 

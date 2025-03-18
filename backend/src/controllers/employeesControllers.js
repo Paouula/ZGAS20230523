@@ -1,7 +1,7 @@
 const employeesControllers = {};
 
-import employees from "../models/employees.js"
-import employeesModel from "../models/employees.js"
+import employees from "../models/employees.js";
+import employeesModel from "../models/employees.js";
 
 //SELECT 
 employeesControllers.getEmployees = async (req, res) => {

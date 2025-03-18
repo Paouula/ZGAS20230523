@@ -1,6 +1,6 @@
 const branchesControllers = {};
-import branches from "../models/branches.js"
-import branchesModel from "../models/branches.js"
+import branches from "../models/branches.js";
+import branchesModel from "../models/branches.js";
 
 //SELECT 
 branchesControllers.getBranches = async (req, res) => {
